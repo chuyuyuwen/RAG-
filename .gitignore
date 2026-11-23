@@ -1,0 +1,43 @@
+# ---- Java / Maven ----
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Maven 本地仓库缓存（不提交，体积巨大）
+.mvn-home/
+
+# ---- 运行时产生的数据 ----
+data/
+*.db
+*.mv.db
+*.trace.db
+# HSQLDB 的文件（data/ 已经被整体排除，这里再兜一层防止误提交）
+*.script
+*.lobs
+*.lck
+*.properties.bak
+
+# ---- 本地私密配置（API Key 写这里，不要提交） ----
+application-local.properties
+application-local.yml
+.env
+
+# ---- IDE ----
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# ---- OS ----
+Thumbs.db
+.DS_Store
+
+# ---- 日志 ----
+*.log
+logs/
